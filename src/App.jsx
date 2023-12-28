@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Bill from "./Components/Bill";
@@ -28,6 +28,9 @@ function App({ handleToggleWishlist }) {
     <div>
       <Routes>
         <Route path="/" element={<DashBoard />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/home" element={<Home />} />
         <Route
           path="/fashion"
           element={
@@ -39,15 +42,6 @@ function App({ handleToggleWishlist }) {
             />
           }
         />
-        <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/forgotPassword" element={<ForgotPassword />} />
-        <Route
-          path="/resetPassword"
-          element={<ResetPassword />} // Extract reset token from URL
-        />
-        <Route path="/home" element={<Home />} />
-
         <Route
           path="/gadgets"
           element={
@@ -60,6 +54,11 @@ function App({ handleToggleWishlist }) {
           }
         />
         <Route path="/bill" element={<Bill />} />
+        <Route path="/forgotPassword" element={<ForgotPassword />} />
+        <Route
+          path="/resetPassword"
+          element={<ResetPassword />} // Extract reset token from URL
+        />
       </Routes>
       <ToastContainer />
     </div>
