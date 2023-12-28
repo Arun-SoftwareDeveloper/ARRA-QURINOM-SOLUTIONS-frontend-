@@ -126,7 +126,7 @@ const GadgetsComponent = () => {
     let sortedProducts = [...products];
     switch (option) {
       case "relevance":
-        // Add relevant sorting logic
+        //  relevant sorting logic
         break;
       case "highest":
         sortedProducts.sort((a, b) => b.price - a.price);
@@ -150,7 +150,6 @@ const GadgetsComponent = () => {
 
   const handleBuyNowSubmit = async () => {
     try {
-      // Create order API call...
       // Assuming order creation is successful, navigate to bill
       navigate(`/bill`, {
         state: {

@@ -1,4 +1,3 @@
-// ResetPassword.jsx
 import React, { useState } from "react";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
@@ -45,10 +44,8 @@ const ResetPassword = ({ resetToken, onSwitchAuthStep }) => {
         password,
       });
 
-      // Handle success, e.g., display success message
       toast.success("Password reset successful", { position: "top-right" });
     } catch (error) {
-      // Handle error, e.g., display error message
       toast.error("Error resetting password. Please try again.", {
         position: "top-right",
       });
@@ -61,11 +58,7 @@ const ResetPassword = ({ resetToken, onSwitchAuthStep }) => {
       <form className="auth-form">
         <label>
           Reset Token:
-          <input
-            type="text"
-            value={resetToken}
-            readOnly // Make the input read-only since you'll be passing the token as a prop
-          />
+          <input type="text" value={resetToken} readOnly />
         </label>
         <label>
           New Password:

@@ -1,4 +1,3 @@
-// ForgotPassword.jsx
 import React, { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -36,11 +35,8 @@ const ForgotPassword = ({ onSwitchAuthStep }) => {
       const response = await axios.post(`${backendApi}/forgotPassword`, {
         email,
       });
-
-      // Handle success, e.g., display success message
       toast.success("Password reset email sent", { position: "top-right" });
     } catch (error) {
-      // Handle error, e.g., display error message
       toast.error("Error initiating password reset. Please try again.", {
         position: "top-right",
       });

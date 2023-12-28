@@ -128,7 +128,6 @@ const FashionComponent = () => {
 
   const handleBuyNowSubmit = async () => {
     try {
-      // Create order API call...
       // Assuming order creation is successful, navigate to bill
       navigate(`/bill`, {
         state: {

@@ -1,4 +1,3 @@
-// Register.jsx
 import React, { useState } from "react";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
@@ -6,8 +5,6 @@ import "react-toastify/dist/ReactToastify.css";
 import { Link, useNavigate } from "react-router-dom";
 import backendApi from "../BackendServerApi";
 import "../Styles/Register.css";
-
-// Add Bootstrap CSS link here if not already included
 
 const Register = ({ onSwitchAuthStep }) => {
   const [firstName, setFirstName] = useState("");
@@ -65,11 +62,9 @@ const Register = ({ onSwitchAuthStep }) => {
         password,
       });
 
-      // Handle success with toast notification
       toast.success("Registration successful", { position: "top-right" });
       navigate("/login");
     } catch (error) {
-      // Handle error with toast notification
       toast.error("Error registering. Please try again.", {
         position: "top-right",
       });

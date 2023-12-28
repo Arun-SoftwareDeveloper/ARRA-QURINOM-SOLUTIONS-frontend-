@@ -30,7 +30,7 @@ const Bill = () => {
       navigate("/"); // Navigate to the home route
     }, 10000);
 
-    return () => clearTimeout(timerId); // Cleanup the timer when the component unmounts or changes
+    return () => clearTimeout(timerId);
   }, [selectedProduct, navigate]);
 
   const handleDownloadPDF = () => {
@@ -63,7 +63,7 @@ const Bill = () => {
   };
 
   if (!selectedProduct || !isVisible) {
-    return null; // Don't render the component if no product is selected or if it's not visible
+    return null;
   }
 
   return (

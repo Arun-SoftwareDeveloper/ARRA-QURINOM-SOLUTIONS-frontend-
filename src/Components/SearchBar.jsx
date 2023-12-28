@@ -14,7 +14,7 @@ const SearchBar = ({ onSearch, onSubmit }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     handleSearch();
-    onSubmit(); // You can add additional logic here if needed
+    onSubmit();
   };
 
   return (

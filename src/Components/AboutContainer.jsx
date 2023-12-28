@@ -5,14 +5,13 @@ import { toast } from "react-toastify";
 function AboutContainer() {
   const handleLogout = () => {
     // Simulating a logout action
-    // In a real application, you would perform actual logout logic here
     toast.success("User Logged Out", {
       position: "top-right",
       style: {
-        background: "#28a745", // Background color
-        color: "#fff", // Text color
-        borderRadius: "8px", // Border radius
-        border: "1px solid #218838", // Border color
+        background: "#28a745",
+        color: "#fff",
+        borderRadius: "8px",
+        border: "1px solid #218838",
       },
     });
   };

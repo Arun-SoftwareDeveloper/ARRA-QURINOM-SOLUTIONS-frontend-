@@ -1,10 +1,9 @@
-// Login.jsx
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "../FormsStyles/Login.css"; // Import your custom styles if needed
+import "../FormsStyles/Login.css";
 import backendApi from "../BackendServerApi";
 
 const Login = () => {
@@ -50,7 +49,6 @@ const Login = () => {
       if (response.status === 401) {
         toast.error("Incorrect password");
       }
-      // Handle success, store token in localStorage
       const { token } = response.data;
       console.log("Token" + token);
       // Display success toast

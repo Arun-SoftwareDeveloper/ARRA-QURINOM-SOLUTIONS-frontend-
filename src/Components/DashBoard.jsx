@@ -1,9 +1,6 @@
-// DashBoard.js
-
 import React from "react";
 import { Link } from "react-router-dom";
 import "../Styles/DashBoard.css";
-import FooterContainer from "./FooterContainer";
 
 function DashBoard() {
   return (
@@ -68,7 +65,6 @@ function DashBoard() {
             </div>
           </div>
         </div>
-        {/* Additional Content */}
       </div>
       {/* <FooterContainer /> */}
     </>
