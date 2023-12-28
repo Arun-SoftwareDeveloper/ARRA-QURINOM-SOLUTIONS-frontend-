@@ -1,0 +1,48 @@
+/* Register.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.row {
+  margin: 0;
+}
+
+.col-md-6 {
+  padding: 20px;
+}
+
+.auth-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form label {
+  font-weight: bold;
+}
+
+.auth-form input {
+  margin-bottom: 10px;
+}
+
+.invalid-feedback {
+  color: red;
+}
+
+Link {
+  text-decoration: none;
+}
+
+/* Add additional styling as needed */
+
+/* Optional: Center the form on smaller screens */
+@media (max-width: 768px) {
+  .col-md-6 {
+    width: 100%;
+  }
+}

@@ -1,0 +1,24 @@
+/* Categories.css */
+
+.categories-container {
+  margin-top: 20px;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card-img-top {
+  max-height: 200px; /* Set the maximum height for the images */
+  object-fit: cover; /* Ensure images maintain aspect ratio and cover the entire container */
+}
+
+.col-md-6 :hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card-title {
+  text-align: center;
+  margin-top: 10px;
+}

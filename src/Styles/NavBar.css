@@ -1,0 +1,17 @@
+/* NavigationBar.css */
+
+.brand-text {
+  color: orange;
+  /* Add additional styles as needed */
+}
+
+.nav-link-text {
+  color: orange;
+  /* Add additional styles as needed */
+}
+
+.login-link {
+  color: orange;
+  text-decoration: none;
+  /* Add additional styles as needed */
+}
