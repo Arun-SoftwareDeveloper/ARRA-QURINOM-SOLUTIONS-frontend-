@@ -1,10 +1,5 @@
 import React, { useState } from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Bill from "./Components/Bill";
@@ -31,43 +26,41 @@ function App({ handleToggleWishlist }) {
 
   return (
     <div>
-      <Router>
-        <Routes>
-          <Route path="/" element={<DashBoard />} />
-          <Route
-            path="/fashion"
-            element={
-              <FashionComponent
-                setCart={setCart}
-                handleAddToCart={handleAddToCart}
-                handleToggleWishlist={handleToggleWishlist}
-                token={token}
-              />
-            }
-          />
-          <Route path="/register" element={<Register />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/forgotPassword" element={<ForgotPassword />} />
-          <Route
-            path="/resetPassword"
-            element={<ResetPassword />} // Extract reset token from URL
-          />
-          <Route path="/home" element={<Home />} />
+      <Routes>
+        <Route path="/" element={<DashBoard />} />
+        <Route
+          path="/fashion"
+          element={
+            <FashionComponent
+              setCart={setCart}
+              handleAddToCart={handleAddToCart}
+              handleToggleWishlist={handleToggleWishlist}
+              token={token}
+            />
+          }
+        />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/forgotPassword" element={<ForgotPassword />} />
+        <Route
+          path="/resetPassword"
+          element={<ResetPassword />} // Extract reset token from URL
+        />
+        <Route path="/home" element={<Home />} />
 
-          <Route
-            path="/gadgets"
-            element={
-              <GadgetsComponent
-                setCart={setCart}
-                handleAddToCart={handleAddToCart}
-                handleToggleWishlist={handleToggleWishlist}
-                token={token}
-              />
-            }
-          />
-          <Route path="/bill" element={<Bill />} />
-        </Routes>
-      </Router>
+        <Route
+          path="/gadgets"
+          element={
+            <GadgetsComponent
+              setCart={setCart}
+              handleAddToCart={handleAddToCart}
+              handleToggleWishlist={handleToggleWishlist}
+              token={token}
+            />
+          }
+        />
+        <Route path="/bill" element={<Bill />} />
+      </Routes>
       <ToastContainer />
     </div>
   );
